@@ -91,7 +91,7 @@ if __name__=="__main__":
         play_game()
         replay=input("\nDo You Want To Play Again [y] or [n] :")
 
-    print("\n\nHappy Gaming")
+    input("\n\nHappy Gaming\n\nPress Enter To Exit")
     
     
     
