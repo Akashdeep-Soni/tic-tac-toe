@@ -16,6 +16,7 @@ def display_board(board):
             pass
         else:
             print(" |",end="")
+    print("\n")
 
 def choose_spot(turn,board_places,board):
     if turn == player_marker:
@@ -62,12 +63,12 @@ def play_game():
         turn=choose_spot(turn,board_places,board)
         if check_win(temp_turn,board):
             if temp_turn == player_marker:
-                print("\n",player_name,"WON")
+                print("\n\n ",player_name,"WON")
             else:
-                print("\nComputer WON")
+                print("\n\n    Computer WON")
             break
         if check_tie(board_places):
-            print("\nGame TIE")
+            print("\n\n    Game TIE")
             break
             
 
@@ -88,7 +89,7 @@ if __name__=="__main__":
     replay="y"
     while replay != "n":
         play_game()
-        replay=input("Do You Want To Play Again [y] or [n] :")
+        replay=input("\nDo You Want To Play Again [y] or [n] :")
 
     print("\n\nHappy Gaming")
     
