@@ -30,7 +30,7 @@ def choose_spot(turn,board_places,board):
         board[spot]=turn
         board_places.remove(spot)
         turn = player_marker
-        print("\nComputer Choosed Spot",spot+1)
+        print("\nComputer Chose Spot",spot+1)
     
     display_board(board)
     return turn
